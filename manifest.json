@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "AI Coding Helper",
+    "version": "1.0",
+    "description": "Chrome integration with AI to help students on coding platforms",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://leetcode.com/*",
+                "https://www.geeksforgeeks.org/*",
+                "https://codeforces.com/*",
+                "https://www.hackerrank.com/*",
+                "https://www.codechef.com/*"
+                
+            ],
+            "js": ["content.js", "extractor.js"]
+        }
+    ],
+    "web_accessible_resources": [
+    {
+      "resources": ["popup.html", "popup.js"],
+      "matches": [
+                "https://leetcode.com/*",
+                "https://www.geeksforgeeks.org/*",
+                "https://codeforces.com/*",
+                "https://www.hackerrank.com/*",
+                "https://www.codechef.com/*"
+                
+            ]
+    }
+  ]
+}

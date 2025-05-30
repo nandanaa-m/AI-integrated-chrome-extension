@@ -1,0 +1,31 @@
+body {
+    font: Arial, sans-serif;
+    padding: 10px;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    color: blue;
+    background-color: white;
+    border-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#response {
+    margin-top: 10px;
+    white-space: pre-wrap;
+}

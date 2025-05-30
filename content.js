@@ -23,7 +23,7 @@ if (!document.getElementById("ai-helper-button")) {
   chatbox.style.right = "20px";
   chatbox.style.width = "370px";
   chatbox.style.height = "500px";
-  chatbox.style.background = "transparent"; // iframe will handle background
+  chatbox.style.background = "transparent"; 
   chatbox.style.border = "none";
   chatbox.style.zIndex = "9999";
   chatbox.style.display = "none";

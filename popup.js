@@ -13,7 +13,7 @@ if (askBtn) {
       return;
     }
 
-    // Get problem from storage
+    // To get problem from 'storage'
     const { problemText, platform } = await new Promise(resolve =>
       chrome.storage.local.get(["problemText", "platform"], resolve)
     );
@@ -37,7 +37,7 @@ if (askBtn) {
     });
 
     const data = await response.json();
-    console.log("OpenAI raw response:", data); // Add this for debugging
+    console.log("OpenAI raw response:", data); 
 
     const reply = data.choices?.[0]?.message?.content;
     outputDiv.innerText = reply || "No response from AI.";
